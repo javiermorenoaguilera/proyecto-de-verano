@@ -1,0 +1,400 @@
+/*este es el css de repositorio*/
+.logo {
+    line-height: 60px;
+    position: fixed;
+    float: left;
+    margin: 16px 46px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+    z-index: 99;
+  }
+  body {
+    background-color: black;
+  }
+  header {
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #hola {
+      margin-top: 182px;
+      margin-left: 240px;
+
+  }
+.lead {
+    margin-left: 240px;
+}
+  h2{
+      text-align: center;
+      color:black;
+  }
+  
+  nav {
+    position: fixed;
+    width: 100%;
+    line-height: 60px;
+    top:0%;
+    z-index:1;
+    
+  }
+  
+  nav ul {
+    line-height: 60px;
+    list-style: none;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    color: rgb(197, 19, 19);
+    padding: 0;
+    text-align: right;
+    margin: 0;
+    padding-right: 40px;
+    transition: 1s;
+    z-index:99;
+  }
+  
+  nav.black ul {
+    background: black;
+    z-index:99;
+   
+  }
+  
+  nav ul li {
+    display: inline-block;
+    padding: 16px 40px;;
+    z-index:99;
+    
+  }
+  nav.black ul li a {
+    color:white;
+    text-decoration: none;;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    z-index:99;
+  }
+  nav.black ul li.uno:hover {
+    background-color: #3346a3;
+  }
+  nav.black ul li.dos:hover {
+    background-color: #EDD712;
+  }
+  nav.black ul li.tres:hover {
+    background-color: #3346a3;
+  }
+  nav.black ul li.cuatro:hover {
+    background-color: #EDD712;
+  }
+  nav.black ul li.cinco:hover {
+    background-color: #3346a3;
+  }
+  nav.black .logo {
+    
+  }
+  .menu-icon {
+    line-height: 60px;
+    width: 100%;
+    background: #000;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 15px 24px;
+    cursor: pointer;
+    color: black;
+    display: none;
+    z-index:1;
+  }
+  
+  @media(max-width: 786px) {
+  
+    .logo {
+          position: fixed;
+          top: 0;
+          margin-top:16px;
+          z-index:99;
+    }
+  
+    nav ul {
+          max-height: 0px;
+          background: #000;
+          z-index:99;
+    }
+  
+    nav.black ul {
+          background: #000;
+          z-index:99;
+    }
+  
+    .showing {
+          max-height: 34em;
+          z-index:99;
+    }
+  
+    nav ul li {
+          box-sizing: border-box;
+          width: 100%;
+          padding: 24px;
+          text-align: center;
+          z-index:99;
+    }
+  
+    .menu-icon {
+          display: inline-block;
+    }
+  
+  }
+  
+    
+    
+    header {
+      background-image: url(imagenes/sdsa.jpg);
+      background-color: red;
+      height: 800px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  
+    .jumbotron {
+      
+    }
+  
+    /*css del boton del header*/
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:700);
+  
+  .boton {
+    position:relative;
+    margin-top:10%;
+    background:rgb(128, 8, 9);
+    border:1px solid white;
+    padding:20px;
+    font-size:0.9em;
+    color:white;
+    box-shadow:4px 4px 0px 0px white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:700;
+    letter-spacing:5px;
+    text-transform:uppercase;
+    transition: all 300ms ease-in-out;
+    left:0;
+    top:0;
+    text-decoration: none;
+  }
+  
+  .boton:hover {
+    left:4px;
+    top:4px;
+    box-shadow:0 0 0 0 white;
+  }
+  
+  /*ESTO ES EL EFECTO GLITCH DE "FRANCES*/
+  
+  h1 {
+    position: relative;
+    font-size: 6rem;
+    color: transparent;
+    white-space: nowrap;
+    transform: skew(-10deg);
+    display: inline-block;
+  }
+  h1 .glitch1,
+  h1 .glitch2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  h1::before,
+  h1::after,
+  h1 .glitch2::before,
+  h1 .glitch2::after,
+  h1 .glitch1::before,
+  h1 .glitch1::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: black;
+    z-index: 1;
+    pointer-events: none;
+    mix-blend-mode: multiply;
+  }
+  h1 .glitch2::before {
+    color: rgb(242, 107, 91);
+    animation: trans4 3.2s infinite;
+    z-index: -1;
+    clip-path: inset(62% 0 0 0);
+  }
+  h1 .glitch2::after {
+    color: #deeaee;
+    animation: trans5 3.2s infinite;
+    z-index: -1;
+    clip-path: inset(62% 0 0 0);
+  }
+  h1::before {
+    clip-path: inset(0 0 43% 0);
+    animation: trans6 3.2s infinite;
+    color: black;
+  }
+  h1::after {
+    clip-path: inset(62% 0 0 0);
+  }
+  h1 .glitch1::before {
+    clip-path: inset(57% 0 42% 0);
+    animation: trans2 .8s steps(1, start) infinite;
+    animation-fill-mode: both;
+    animation-delay: 0.2s;
+    color: black;
+  }
+  h1 .glitch1::after {
+    clip-path: inset(58% 0 38% 0);
+    animation: trans1 .8s steps(1, start) infinite;
+    animation-fill-mode: both;
+    color: black;
+  }
+  
+  @keyframes trans1 {
+    0% {
+      transform: translateX(-1%);
+    }
+    20% {
+      transform: translateX(0.5%);
+    }
+    40% {
+      transform: translateX(-0.2%);
+    }
+    60% {
+      transform: translateX(0.6%);
+    }
+    90% {
+      transform: translateX(0.8%);
+    }
+    100% {
+      transform: translateX(-1%);
+    }
+  }
+  @keyframes trans2 {
+    0% {
+      transform: translateX(5%);
+    }
+    20% {
+      transform: translateX(2.5%);
+    }
+    55% {
+      transform: translateX(1.8%);
+    }
+    60% {
+      transform: translateX(2.6%);
+    }
+    80% {
+      transform: translateX(2.8%);
+    }
+    100% {
+      transform: translateX(3%);
+    }
+  }
+  @keyframes trans3 {
+    0% {
+      transform: translateX(1%);
+    }
+    20% {
+      transform: translateX(1.1%);
+    }
+    45% {
+      transform: translateX(1.2%);
+    }
+    70% {
+      transform: translateX(1.4%);
+    }
+    90% {
+      transform: translateX(0.6%);
+    }
+    100% {
+      transform: translateX(1.2%);
+    }
+  }
+  @keyframes trans4 {
+    0% {
+      transform: translateX(0%);
+    }
+    60% {
+      transform: translateX(0.5%);
+    }
+    60.001% {
+      transform: translateX(0.3%);
+    }
+    100% {
+      transform: translateX(0.2%);
+    }
+  }
+  @keyframes trans5 {
+    0% {
+      transform: translateX(0%);
+    }
+    60% {
+      transform: translateX(-0.5%);
+    }
+    60.001% {
+      transform: translateX(-0.3%);
+    }
+    100% {
+      transform: translateX(-0.2%);
+    }
+  }
+  @keyframes trans6 {
+    0% {
+      transform: translateX(0.6%);
+    }
+    60% {
+      transform: translateX(1.1%);
+    }
+    60.001% {
+      transform: translateX(0.9%);
+    }
+    100% {
+      transform: translateX(1.2%);
+    }
+  }
+  
+  /*media querys*/
+  @media screen and (max-width:800px) {
+     #hola {
+         font-size: 62px;
+         margin-top:92px;
+         margin-left: 0px;
+     }
+     header {
+         width: 105%;
+     }
+     .lead {
+        margin-left: 0px;
+     }
+     .logo {
+       color:white;
+     }
+     nav ul li a  {
+       color:white;
+     }
+     .menu-icon {
+       color: white;
+     }
+  }
+
+  /*media querys*/
+  @media screen and (max-width:800px) {
+    .container-fluid {
+      width:105%;
+    }
+    header {
+      background-image: url("imagenes/772.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    h1::before {
+      color:white
+    }
+    .lead {
+      color:white
+    }
+  }
