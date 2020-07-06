@@ -1,0 +1,185 @@
+/*hoja de estilo de listening*/
+body {
+    background-color: salmon;
+}
+header {
+    background-image: url("imagenes/ttt.gif");
+    width: 100%;
+    height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0vw;
+}
+
+.jumbotron {
+    padding-top: 182px;
+      padding-left: 35%;
+      
+}
+
+
+
+audio {
+  margin-left: 45%;
+}
+
+iframe {
+  margin-left: 25%;
+}
+
+
+/* boton morado */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+     
+  }
+  button{
+    background-image: linear-gradient(#3333cc, #cc00cc);
+    border:none;
+    color:white;
+    margin-bottom: 29px;
+    font-size: 60px;
+    font-family: 'Teko', sans-serif;
+    cursor: pointer;
+    margin-left: 30%;
+    
+  }
+  #myBtn {
+    margin-left: 50%;
+  }
+  /* The Close Button */
+  .close {
+     
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    
+  }
+  /*siempre que use float para apilar columnas,debo acabar poniendo un div e indicando que a partir de ahi se acaba el apilamiento */
+  #fin-float {
+    clear: both;
+  }
+  a {
+      font-size: 30px;
+      margin-left:45%;
+      display: inline-block;
+      margin-bottom: 30px;
+      border: dashed  black;
+      text-decoration: none;
+  }
+  a:hover {
+      color: blue;
+}
+
+h3 {
+    text-align: center;
+}
+
+ /*media querys*/
+ @media screen and (max-width:800px) {
+   audio {
+    
+     margin-left:0;
+   }
+
+   #videos {
+    width: 100vw;
+    
+   }
+   header {
+     width: 100vw;
+     background-image: url("imagenes/Untitled.svg");
+     background-repeat: no-repeat;
+     background-size: cover;
+   }
+   header h1 {
+     font-size: 20px;
+     color:  cornflowerblue;
+     
+     
+   }
+   header .jumbotron {
+     padding-left: 10%;
+   }
+   audio {
+     margin:0;
+     background-color: cornflowerblue;
+   }
+   #audios {
+     padding-left: 10%;
+   }
+   .modal-content {
+     width: 60%;
+     z-index: 99;
+   }
+   #myBtn {
+     background-color: red;
+    
+   }
+   button {
+     font-size: 6px;
+     height: 50px;
+    
+   }
+   .modal {
+   
+     
+   }
+   iframe{
+     width: 99vw;
+     padding-left: 0%;
+     margin-left: 0%;
+   }
+   .header {
+    background-color: white;
+    background-image: radial-gradient(lightgrey 10%, transparent 5%),
+      radial-gradient(lightgrey 10%, transparent 5%);
+    background-size: 20px 20px;
+    background-position: 0 0, 20px 20px;
+    }
+  
+    h1 {
+    font-size: 200px;
+    -webkit-text-fill-color: whitesmoke; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: darkgrey;
+    text-transform: uppercase;
+    line-height: 90%;
+    }
+  
+    .lead {
+    color:#D4BB3D
+    }
+  
+    .display-4 {
+    text-shadow: 2px 2px white, 8px 10px #7C85EF;
+    margin-bottom: 20%;
+    }
+    }

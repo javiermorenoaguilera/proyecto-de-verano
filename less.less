@@ -1,0 +1,85 @@
+@import "lesshat";
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+.translate(@x,@y){
+  transform:translate(@x,@y);
+  -ms-transform:translate(@x,@y); // IE 9 
+  -moz-transform:translate(@x,@y); // Firefox 
+  -webkit-transform:translate(@x,@y); // Safari and Chrome 
+  -o-transform:translate(@x,@y); // Opera  
+}
+.container{   
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 60px;
+  margin: 0 auto;
+  top:20px;
+   &.hidden{
+     overflow: hidden;
+   }
+}
+.div-img{
+  .img{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+    
+  .overlay{
+    display:block;
+    margin: 0 auto;
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    z-index: 10;
+    left: 0px;
+    top:0px;
+    -webkit-transition: all 500ms ease-in-out; // IE 9
+    -moz-transition: all 500ms ease-in-out; // Firefox
+    -ms-transition: all 500ms ease-in-out; // Safari and Chrome 
+    -o-transition: all 500ms ease-in-out; // Opera    
+    &.up{
+      .translate(0px,-100px);
+      background: -webkit-linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0));
+      background: -o-linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0));
+      background: -moz-linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0));
+      background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0));
+    }
+    &.down{
+      .translate(0px,200px);
+      background: -webkit-linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.9));
+      background: -o-linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.9));
+      background: -moz-linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.9));
+      background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.9));
+    }
+  }
+  .text{
+    font-family: 'Open Sans';
+    color: white;
+    display: block;
+    position: relative;
+    top: -110px;
+    text-align: center;
+    opacity: 0;
+    -webkit-transition: opacity 500ms ease-in-out; // IE 9
+    -moz-transition: opacity 500ms ease-in-out; // Firefox
+    -ms-transition: opacity 500ms ease-in-out; // Safari and Chrome 
+    -o-transition: opacity 500ms ease-in-out; // Opera    
+  }
+
+  &:hover{
+    .overlay.up{
+      .translate(0px,-30px);
+    }
+    .overlay.down{
+      .translate(0px,130px);
+    }
+    .text{
+      opacity:1;
+    }
+  }
+}
+
